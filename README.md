@@ -6,7 +6,7 @@ Swiper dodaje do templatki poprzez dodanie kodu ze strony https://swiperjs.com/g
 
 zgodznie z dokumentacja wywoluje slider responsywny lazy loadingiem obrazów
 
-new Swiper(".custom-featured-colletion-swiper", {
+{
     slidesPerView: 1,    
     slidesPerGroup: 1, 
     spaceBetween: 15,
@@ -34,7 +34,7 @@ new Swiper(".custom-featured-colletion-swiper", {
             slidesPerGroup: 4, 
         }
     }
-  });
+  }
 
 
   Niestety ale na brak czasu w tym tygodniu slider wykonałem na podstawie templatki Dawn z wykorzystaniem sekcji featured collection
