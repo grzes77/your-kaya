@@ -18,7 +18,7 @@
 }
 
 .rating-star {
-  --color-rating-star: rgb(var(--color-foreground));
+  --color-rating-star: var(--color-fawn);
   --percent: calc(
     (
         var(--rating) / var(--rating-max) + var(--rating-decimal) * var(--font-size) /
@@ -35,6 +35,8 @@
 
 .rating-star::before {
   content: '★★★★★';
+  font-size: 22px;
+  letter-spacing: 0;
   background: linear-gradient(
     90deg,
     var(--color-rating-star) var(--percent),

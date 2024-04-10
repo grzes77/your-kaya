@@ -1,0 +1,82 @@
+.swipper-box {
+  overflow: hidden;
+
+  div.swiper {
+    width: 80%;
+    padding: 0 10px;
+    margin-left: 0;
+    overflow: visible;
+
+    @media screen and (min-width: 900px) {
+      max-width: var(--page-width);
+      margin: 0 auto 0 auto;
+      width: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media screen and (max-width: 1100px) {
+        max-width: unset;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: flex;
+      border: 2px solid var(--color-lightgray);
+      border-radius: 50%;
+      top: -100px;
+      width: 65px;
+      height: 65px;
+      top: 30%;
+    }
+
+    div.swiper-button-next.swiper-button-disabled,
+    div.swiper-button-prev.swiper-button-disabled {
+      display: none;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      padding: 10px;
+      color: var(--color-black);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 1270px) {
+      .swiper-button-next {
+        right: -65px;
+      }
+    }
+  }
+}
+.collection__title {
+    @media screen and (min-width: 1100px) {
+    position: relative;
+    
+    .collection__view-all {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+    @media screen and (max-width: 1100px) {
+      
+
+      .collection__view-all {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+      }
+    }
+  }

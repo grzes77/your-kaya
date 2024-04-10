@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Satoshi-Medium';
+    src: url('Satoshi-Medium.eot')
+        url('Satoshi-Medium.eot') format('embedded-opentype'),
+        url('Satoshi-Medium.woff') format('woff'),
+        url('Satoshi-Medium.woff2') format('woff2'),
+        url('Satoshi-Medium.ttf') format('ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('Satoshi-Bold.eot')
+        url('Satoshi-Bold.eot') format('embedded-opentype'),
+        url('Satoshi-Bold.woff') format('woff'),
+        url('Satoshi-Bold.woff2') format('woff2'),
+        url('Satoshi-Bold.ttf') format('ttf');
+    font-display: swap;
+}

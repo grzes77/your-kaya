@@ -3,8 +3,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "rating_UcdTQK": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -17,11 +24,13 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
           }
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_shape": "circle"
@@ -29,11 +38,13 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
@@ -41,17 +52,20 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
         }
       },
       "block_order": [
+        "rating_UcdTQK",
         "vendor",
         "title",
         "price",
@@ -79,6 +93,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -94,10 +109,39 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "custom_featured_collection_tw7aXK": {
+      "type": "custom-featured-collection",
+      "settings": {
+        "title": "Polecane dla Ciebie",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_product_type": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 76
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "custom_featured_collection_tw7aXK"
   ]
 }

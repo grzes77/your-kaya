@@ -1,0 +1,48 @@
+.card-wrapper.product-card-wrapper {
+  min-width: 200px;
+
+  .card__inner .card__badge .badge-sale {
+    --color-badge-background: 249, 82, 73;
+    --color-badge-border: 249, 82, 73;
+    --color-badge-foreground: 255, 255, 255;
+    --badge-corner-radius: 10px;
+  }
+
+  .card__information {
+    .card__heading {
+      font-family: "Satoshi-Medium";
+      min-height: 38px;
+      a {
+        font-size: 20px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .card-information {
+    padding-bottom: 10px;
+    .product-type {
+      text-transform: unset;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .price__container {
+    font-size: 16px;
+
+    .price__regular {
+      font-family: "Satoshi-Bold";
+    }
+
+    .price__sale {
+      font-family: "Satoshi-Medium";
+      text-decoration: none;
+      .price-item--regular {
+        text-decoration: none;
+      }
+    }
+  }
+}
